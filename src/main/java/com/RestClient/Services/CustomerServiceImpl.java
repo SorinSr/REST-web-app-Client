@@ -63,10 +63,11 @@ public class CustomerServiceImpl implements CustomerService {
 
     @Override
     public List<Customer> getCustomerByName(String searchName) {
-        logger.info("in getCustomerByName(): Calling REST API " + crmRestUrl+ "/" + searchName);
+        String searchByNameUrl = "http://localhost:8080/CrudRealTimeRestApiBackend_war/api/customersByName";
+        logger.info("in getCustomerByName(): Calling REST API " + searchByNameUrl+ "/" + searchName);
 
         //the REST call
-        ResponseEntity<List<Customer>> responseEntity = restTemplate.exchange(crmRestUrl+ "/" + searchName, HttpMethod.GET, null,
+        ResponseEntity<List<Customer>> responseEntity = restTemplate.exchange(searchByNameUrl+ "/" + searchName, HttpMethod.GET, null,
                 new ParameterizedTypeReference<List<Customer>>() {});
 
         List<Customer> customers = responseEntity.getBody();
