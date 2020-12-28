@@ -1,0 +1,9 @@
+com\RestClient\Services\CustomerServiceImpl.class
+com\RestClient\Configs\DemoAppConfig.class
+com\RestClient\Services\CustomerServiceImpl$1.class
+com\RestClient\Configs\DemoDispatcherServletInitializer.class
+com\RestClient\Model\Customer.class
+com\RestClient\Controllers\DemoController.class
+com\RestClient\Services\CustomerService.class
+com\RestClient\Services\CustomerServiceImpl$2.class
+com\RestClient\Controllers\CustomerController.class
