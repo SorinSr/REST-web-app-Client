@@ -6,8 +6,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class DemoController {
 
+//    @GetMapping("/homePage")
+//    public String showHome(){
+//        return "officialHomePage";
+//    }
+
+//    @GetMapping("/")
+//    public String showLoadingPage(){
+//        return "loadingPage";
+//    }
     @GetMapping("/")
-    public String showMenu(){
+    public String showLoadingPage(){
         return "mainMenu";
     }
 }
